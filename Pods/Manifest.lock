@@ -1,0 +1,18 @@
+PODS:
+  - GzipSwift (4.0.4)
+  - Light-Untar (0.3.0)
+  - SwiftKeychainWrapper (3.0.1)
+
+DEPENDENCIES:
+  - GzipSwift
+  - Light-Untar
+  - SwiftKeychainWrapper
+
+SPEC CHECKSUMS:
+  GzipSwift: 1a5bc5f7827e09846b0635b5079f1224bc3b1c3a
+  Light-Untar: e901c312974d36f3910aec73436296a5a3faf799
+  SwiftKeychainWrapper: 38952a3636320ae61bad3513cadd870929de7a4a
+
+PODFILE CHECKSUM: 1d31ba5dcb09a0df4e561d2185978e1ab6906969
+
+COCOAPODS: 1.4.0
