@@ -12,6 +12,7 @@ struct userLoginRequest: Codable {
     let success: Bool
     let token: String
     let status: String
+    
 }
 
 class ViewController: UIViewController, UITextFieldDelegate {
