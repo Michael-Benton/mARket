@@ -62,10 +62,6 @@ class sceneViewController: UIViewController, ARSCNViewDelegate, UIGestureRecogni
         
         itemObjUrl.appendPathExtension("obj")
         
-        //        let asset = MDLAsset(url: destPath)
-        //        let object = asset.object(at: 0)
-        //        node = SCNNode.init(mdlObject: object)
-        
         let asset = MDLAsset(url: itemObjUrl)
         self.scene = SCNScene(mdlAsset: asset)
     }

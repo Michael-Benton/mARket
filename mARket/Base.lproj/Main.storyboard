@@ -56,20 +56,6 @@
                                     <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V6H-dt-dP1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0eo-mx-Hcz">
-                                <rect key="frame" x="53" y="548" width="268" height="50"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Vto-rU-Q38"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <state key="normal" title="I am a new user">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="registerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J4A-0J-Ag3"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -80,13 +66,10 @@
                             <constraint firstItem="bsz-rB-0dT" firstAttribute="leading" secondItem="pIJ-Mh-Xkb" secondAttribute="leading" id="AtW-MS-0Pg"/>
                             <constraint firstItem="WXO-rj-4UM" firstAttribute="leading" secondItem="pIJ-Mh-Xkb" secondAttribute="leading" id="Eal-PS-l0h"/>
                             <constraint firstItem="bsz-rB-0dT" firstAttribute="top" secondItem="WXO-rj-4UM" secondAttribute="bottom" constant="85" id="Ejh-nP-Lry"/>
-                            <constraint firstItem="0eo-mx-Hcz" firstAttribute="top" secondItem="bsz-rB-0dT" secondAttribute="bottom" constant="18" id="Epj-cz-HUc"/>
                             <constraint firstItem="pIJ-Mh-Xkb" firstAttribute="top" secondItem="0Jw-TH-GY5" secondAttribute="bottom" constant="12" id="Ipu-io-w5p"/>
-                            <constraint firstItem="0eo-mx-Hcz" firstAttribute="leading" secondItem="bsz-rB-0dT" secondAttribute="leading" id="K72-TU-WJG"/>
                             <constraint firstItem="Y1H-vu-z0L" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="eJ4-JW-CMz"/>
                             <constraint firstItem="pIJ-Mh-Xkb" firstAttribute="leading" secondItem="0Jw-TH-GY5" secondAttribute="leading" id="hqZ-P6-zuc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pIJ-Mh-Xkb" secondAttribute="trailing" constant="54" id="jBB-rP-KHq"/>
-                            <constraint firstItem="0eo-mx-Hcz" firstAttribute="trailing" secondItem="bsz-rB-0dT" secondAttribute="trailing" id="oRa-zp-moU"/>
                             <constraint firstItem="bsz-rB-0dT" firstAttribute="trailing" secondItem="pIJ-Mh-Xkb" secondAttribute="trailing" id="rhb-4b-5iw"/>
                             <constraint firstItem="Y1H-vu-z0L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="wra-xl-6p8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Y1H-vu-z0L" secondAttribute="trailing" constant="64" id="yrK-rT-zsx"/>
@@ -157,21 +140,6 @@
                 </pinchGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="137" y="884"/>
-        </scene>
-        <!--Register User View Controller-->
-        <scene sceneID="xGK-es-iuN">
-            <objects>
-                <viewController storyboardIdentifier="registerUserViewController" id="PbI-Nh-cmk" customClass="registerUserViewController" customModule="mARket" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ZCo-SG-fk4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="19k-7F-qhi"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="61Z-vA-KlY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1108" y="884"/>
         </scene>
         <!--Stores-->
         <scene sceneID="2uY-Oh-c6D">

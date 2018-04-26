@@ -27,10 +27,6 @@ class mainViewController: UIViewController, UITableViewDelegate, UITableViewData
         usersLocation = locations[0]
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//
-//    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchStores()
@@ -49,15 +45,15 @@ class mainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func showPickerInActionSheet() {
         
-        var title = "Miles"
-        var message = "\n\n\n\n\n\n\n\n\n\n";
-        var alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.actionSheet);
+        let title = "Miles"
+        let message = "\n\n\n\n\n\n\n\n\n\n";
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.actionSheet);
         alert.isModalInPopover = true;
         
         
         //Create a frame (placeholder/wrapper) for the picker and then create the picker
-        var pickerFrame: CGRect = CGRect(x: 40, y: 52, width: 270, height: 100) // CGRectMake(left), top, width, height) - left and top are like margins
-        var picker: UIPickerView = UIPickerView(frame: pickerFrame);
+        let pickerFrame: CGRect = CGRect(x: 40, y: 52, width: 270, height: 100)
+        let picker: UIPickerView = UIPickerView(frame: pickerFrame);
  
         //set the pickers datasource and delegate
         picker.delegate = self;
@@ -67,14 +63,14 @@ class mainViewController: UIViewController, UITableViewDelegate, UITableViewData
         alert.view.addSubview(picker);
         
         //Create the toolbar view - the view witch will hold our 2 buttons
-        var toolFrame =  CGRect(x: 25, y: 5, width: 270, height: 45)
-        var toolView: UIView = UIView(frame: toolFrame);
+        let toolFrame =  CGRect(x: 25, y: 5, width: 270, height: 45)
+        let toolView: UIView = UIView(frame: toolFrame);
         
         //add buttons to the view
-        var buttonCancelFrame: CGRect = CGRect(x: 0, y: 4, width: 100, height: 30) //size & position of the button as placed on the toolView
+        let buttonCancelFrame: CGRect = CGRect(x: 0, y: 4, width: 100, height: 30) //size & position of the button as placed on the toolView
         
         //Create the cancel button & set its title
-        var buttonCancel: UIButton = UIButton(frame: buttonCancelFrame);
+        let buttonCancel: UIButton = UIButton(frame: buttonCancelFrame);
         buttonCancel.setTitle("Cancel", for: .normal);
         buttonCancel.setTitleColor(UIColor.blue, for: .normal);
         toolView.addSubview(buttonCancel); //add it to the toolView
@@ -84,10 +80,10 @@ class mainViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         
         //add buttons to the view
-        var buttonOkFrame: CGRect = CGRect(x: 210, y: 4, width: 100, height: 30) //size & position of the button as placed on the toolView
+        let buttonOkFrame: CGRect = CGRect(x: 210, y: 4, width: 100, height: 30) //size & position of the button as placed on the toolView
         
         //Create the Select button & set the title
-        var buttonOk: UIButton = UIButton(frame: buttonOkFrame);
+        let buttonOk: UIButton = UIButton(frame: buttonOkFrame);
         buttonOk.setTitle("Select", for: .normal);
         buttonOk.setTitleColor(UIColor.blue, for: .normal);
         toolView.addSubview(buttonOk); //add to the subview
@@ -105,7 +101,6 @@ class mainViewController: UIViewController, UITableViewDelegate, UITableViewData
     @objc func cancelSelection(sender: UIButton){
         print("Cancel");
         dismiss(animated: true, completion: nil);
-        // We dismiss the alert. Here you can add your additional code to execute when cancel is pressed
     }
     
     @IBAction func logOutPressed(_ sender: Any) {

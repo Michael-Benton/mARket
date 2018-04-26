@@ -10,7 +10,6 @@
 		678C349843ECCBA21FD84DE5 /* Pods_mARket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7D1C92BC41B15D0A5341E7A /* Pods_mARket.framework */; };
 		7A12AFEE2087080300CDF236 /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A12AFED2087080300CDF236 /* DownloadManager.swift */; };
 		7A12AFF020871F7F00CDF236 /* sceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A12AFEF20871F7F00CDF236 /* sceneViewController.swift */; };
-		7A12AFF22087398400CDF236 /* registerUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A12AFF12087398400CDF236 /* registerUserViewController.swift */; };
 		7A199D662084EEB400E55813 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A199D652084EEB400E55813 /* AppDelegate.swift */; };
 		7A199D682084EEB400E55813 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A199D672084EEB400E55813 /* ViewController.swift */; };
 		7A199D6B2084EEB400E55813 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A199D692084EEB400E55813 /* Main.storyboard */; };
@@ -32,7 +31,6 @@
 		669A89990DC96BE47A150E67 /* Pods-mARket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mARket.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mARket/Pods-mARket.debug.xcconfig"; sourceTree = "<group>"; };
 		7A12AFED2087080300CDF236 /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
 		7A12AFEF20871F7F00CDF236 /* sceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sceneViewController.swift; sourceTree = "<group>"; };
-		7A12AFF12087398400CDF236 /* registerUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerUserViewController.swift; sourceTree = "<group>"; };
 		7A199D622084EEB400E55813 /* mARket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mARket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A199D652084EEB400E55813 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A199D672084EEB400E55813 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -124,7 +122,6 @@
 				7A199D822085AD7800E55813 /* storeViewController.swift */,
 				7A199D86208691FA00E55813 /* storeItemViewController.swift */,
 				7A12AFEF20871F7F00CDF236 /* sceneViewController.swift */,
-				7A12AFF12087398400CDF236 /* registerUserViewController.swift */,
 				7A6BB8082088DB8E00E6360E /* Cells */,
 			);
 			path = Views;
@@ -296,7 +293,6 @@
 				7A199D662084EEB400E55813 /* AppDelegate.swift in Sources */,
 				7A199D7D20850BE700E55813 /* mainTableViewCell.swift in Sources */,
 				7A199D87208691FA00E55813 /* storeItemViewController.swift in Sources */,
-				7A12AFF22087398400CDF236 /* registerUserViewController.swift in Sources */,
 				7A12AFEE2087080300CDF236 /* DownloadManager.swift in Sources */,
 				7A199D812085124F00E55813 /* StoreModel.swift in Sources */,
 				7A199D6E2084EEB400E55813 /* mARket.xcdatamodeld in Sources */,

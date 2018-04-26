@@ -59,14 +59,12 @@ class DownloadManager : NSObject, URLSessionDelegate, URLSessionDownloadDelegate
 
     func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didFinishDownloadingTo location: URL) {
         debugPrint("Download finished: \(location)")
-        print("THE DOWNLOAD IS: \(location)")
         
         let tempDocumentsURL =  FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first as URL?
         var gzFileUrl = tempDocumentsURL!.appendingPathComponent(urlStringForItemDownload)
         var tarFileUrl = tempDocumentsURL!.appendingPathComponent(urlStringForItemDownload)
-        var finalUrl = tempDocumentsURL!.appendingPathComponent(urlStringForItemDownload)
+        let finalUrl = tempDocumentsURL!.appendingPathComponent(urlStringForItemDownload)
 
-        //destinationFileUrl = destinationFileUrl.appendingPathExtension("obj")
         gzFileUrl.appendPathExtension("gz")
         tarFileUrl.appendPathExtension("tar")
 
@@ -80,15 +78,11 @@ class DownloadManager : NSObject, URLSessionDelegate, URLSessionDownloadDelegate
             print("error when moving zip to dest path")
         }
 
-        print("BEFORE UNGZIPPED")
-
         let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
         let searchURL = NSURL(fileURLWithPath: path)
         if var pathComponent = searchURL.appendingPathComponent(urlStringForItemDownload) {
             pathComponent.appendPathExtension("gz")
             let filePath = pathComponent.path
-            print("filepath is:")
-            print(filePath)
             let fileManager = FileManager.default
             if fileManager.fileExists(atPath: filePath) {
                 print("FILE AVAILABLE")
@@ -100,11 +94,8 @@ class DownloadManager : NSObject, URLSessionDelegate, URLSessionDownloadDelegate
         }
 
         let decompressedData: Data
-        //        print("NAME OF DEST PATH")
-        //        print(destPath)
         do{
             let compressedData = try Data(contentsOf: gzFileUrl)
-            //let returnData = String(data: compressedData, encoding: .utf8)
             if compressedData.isGzipped {
                 print("IN GZIPPED")
                 decompressedData = try! compressedData.gunzipped()
@@ -121,10 +112,6 @@ class DownloadManager : NSObject, URLSessionDelegate, URLSessionDownloadDelegate
         }catch{
             print("error while converting url to data")
         }
-        print("THE URL:")
-        print(tarFileUrl)
-
-        print("AFTER GZIPPED")
 
         if var pathComponent = searchURL.appendingPathComponent(urlStringForItemDownload) {
             pathComponent.appendPathExtension("tar")
@@ -144,12 +131,9 @@ class DownloadManager : NSObject, URLSessionDelegate, URLSessionDownloadDelegate
         do{
             let compressedData = try! Data(contentsOf: tarFileUrl)
             try FileManager.default.createFilesAndDirectories(at: finalUrl, withTarData: compressedData) { (float) in
-                print("I think it was untarred")
                 if var pathComponent = searchURL.appendingPathComponent("\(urlStringForItemDownload)/\(urlStringForItemDownload)") {
                     pathComponent.appendPathExtension("obj")
                     let filePath = pathComponent.path
-                    print("filepath is:")
-                    print(filePath)
                     let fileManager = FileManager.default
                     if fileManager.fileExists(atPath: filePath) {
                         print("FILE AVAILABLE")
