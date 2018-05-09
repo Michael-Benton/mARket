@@ -101,7 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				7A6BB8072088DB7900E6360E /* Models */,
-				7A6BB8062088DB7400E6360E /* Views */,
+				7A6BB8062088DB7400E6360E /* ViewControllers */,
 				7A6BB8092088DCC500E6360E /* Extentions */,
 				7A199D652084EEB400E55813 /* AppDelegate.swift */,
 				7A199D692084EEB400E55813 /* Main.storyboard */,
@@ -114,7 +114,7 @@
 			path = mARket;
 			sourceTree = "<group>";
 		};
-		7A6BB8062088DB7400E6360E /* Views */ = {
+		7A6BB8062088DB7400E6360E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				7A199D672084EEB400E55813 /* ViewController.swift */,
@@ -124,7 +124,7 @@
 				7A12AFEF20871F7F00CDF236 /* sceneViewController.swift */,
 				7A6BB8082088DB8E00E6360E /* Cells */,
 			);
-			path = Views;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		7A6BB8072088DB7900E6360E /* Models */ = {
